@@ -363,6 +363,62 @@ footer .footer-name {
         font-size: 19px;
     }
 }
+    
+
+/* INSIGHTS */
+
+.insights {
+    background: var(--white);
+}
+
+.insights-intro {
+    max-width: 700px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px 35px;
+}
+
+.insight {
+    border-top: 2px solid var(--gold);
+    padding-top: 25px;
+}
+
+.insight-number {
+    display: block;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 30px;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.insight h3 {
+    font-size: 25px;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.insight p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+    .insights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .insights-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
 
 </style>
 </head>
@@ -378,7 +434,7 @@ footer .footer-name {
             <a href="#about">About</a>
             <a href="#books">Books</a>
             <a href="#philosophy">Philosophy</a>
-            <a href="#contact">Contact</a>
+            <a href="#insights">Insights</a>
         </nav>
     </div>
 </header>
@@ -578,19 +634,94 @@ footer .footer-name {
     </div>
 </section>
 
-<section class="contact" id="contact">
+
+<section class="insights" id="insights">
     <div class="container">
 
-        <div class="eyebrow">Get in Touch</div>
+        <div class="eyebrow">Thoughts on Life</div>
 
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Insights</h2>
 
-        <p>
-            Contact information for publishing inquiries,
-            rights, translations, and professional
-            correspondence will be available here.
+        <div class="gold-line"></div>
+
+        <p class="insights-intro">
+            Reflections on personal growth, human nature,
+            and the small discoveries that can change
+            the way we experience life.
         </p>
 
+        <div class="insights-grid">
+
+            <article class="insight">
+                <span class="insight-number">01</span>
+                <h3>The Power of Awareness</h3>
+                <p>
+                    We cannot change what we refuse to notice.
+                    The moment we begin to observe our thoughts
+                    instead of simply believing them, we open
+                    the door to a different way of living.
+                </p>
+            </article>
+
+            <article class="insight">
+                <span class="insight-number">02</span>
+                <h3>Beyond the Familiar</h3>
+                <p>
+                    Familiarity can feel like safety, even
+                    when it no longer brings us happiness.
+                    Growth begins when we become willing
+                    to explore what lies beyond the boundaries
+                    of our everyday routines.
+                </p>
+            </article>
+
+            <article class="insight">
+                <span class="insight-number">03</span>
+                <h3>Understanding Fear</h3>
+                <p>
+                    Courage is not the absence of fear.
+                    It is the ability to recognize fear
+                    without allowing it to make every
+                    important decision in our lives.
+                </p>
+            </article>
+
+            <article class="insight">
+                <span class="insight-number">04</span>
+                <h3>The Invisible Weight of the Past</h3>
+                <p>
+                    Our past may explain who we have become,
+                    but it does not have to determine who
+                    we will be. Every day offers an opportunity
+                    to respond to life differently.
+                </p>
+            </article>
+
+            <article class="insight">
+                <span class="insight-number">05</span>
+                <h3>Small Changes, Lasting Impact</h3>
+                <p>
+                    Meaningful transformation rarely happens
+                    overnight. It grows quietly through the
+                    ordinary choices we make, the habits we
+                    develop, and the promises we keep
+                    to ourselves.
+                </p>
+            </article>
+
+            <article class="insight">
+                <span class="insight-number">06</span>
+                <h3>Living With Intention</h3>
+                <p>
+                    A fulfilling life is not necessarily
+                    a life filled with extraordinary moments.
+                    It is a life in which we are present enough
+                    to recognize the extraordinary within
+                    the ordinary.
+                </p>
+            </article>
+
+        </div>
     </div>
 </section>
 
