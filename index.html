@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jason Balson | Author & Personal Growth</title>
+<meta name="description" content="Explore Jason Balson's writing on personal growth, meaningful change, self-awareness, and living with purpose.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --cream: #f7f5ef;
+    --dark: #23352f;
+    --gold: #ad9162;
+    --text: #353a37;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 35px;
+}
+
+/* HEADER */
+
+header {
+    background: var(--cream);
+    border-bottom: 1px solid #dedbd2;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: var(--dark);
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* HERO */
+
+.hero {
+    background: var(--cream);
+    padding: 95px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #8b7146;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 6vw, 82px);
+    color: var(--dark);
+    margin-bottom: 28px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 540px;
+    margin-bottom: 32px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--dark);
+    color: var(--white);
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #466054;
+}
+
+.portrait {
+    width: 100%;
+    min-height: 490px;
+    background: #e6e1d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #77746c;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 95px 0;
+}
+
+.section-title {
+    font-size: 44px;
+    color: var(--dark);
+    margin-bottom: 30px;
+}
+
+.gold-line {
+    width: 55px;
+    height: 2px;
+    background: var(--gold);
+    margin-bottom: 30px;
+}
+
+/* ABOUT */
+
+.about {
+    background: var(--white);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BOOKS */
+
+.books-intro {
+    max-width: 650px;
+    margin-bottom: 45px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.book-cover {
+    aspect-ratio: 2 / 3;
+    background: #e4dfd3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #77746c;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.book h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.book p {
+    font-size: 14px;
+}
+
+/* PHILOSOPHY */
+
+.philosophy {
+    background: var(--dark);
+    color: var(--cream);
+    text-align: center;
+}
+
+.philosophy .eyebrow {
+    color: #d8bf93;
+}
+
+.philosophy h2 {
+    font-size: clamp(32px, 5vw, 54px);
+    max-width: 850px;
+    margin: 0 auto 30px;
+}
+
+.philosophy p {
+    max-width: 680px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    background: var(--white);
+}
+
+.contact p {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--dark);
+    color: #d2d8d4;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 13px;
+}
+
+footer .footer-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 23px;
+    color: var(--white);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 12px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .portrait {
+        max-width: 460px;
+        min-height: 380px;
+        margin: auto;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 0 22px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .book-grid {
+        gap: 25px;
+    }
+
+    .book h3 {
+        font-size: 19px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+        <a href="#home" class="logo">JASON BALSON</a>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#books">Books</a>
+            <a href="#philosophy">Philosophy</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="container hero-grid">
+
+        <div>
+            <div class="eyebrow">
+                Author · Personal Growth
+            </div>
+
+            <h1>Change begins<br>within.</h1>
+
+            <p>
+                Exploring the power of thought,
+                the courage to change, and the art
+                of living a more meaningful life.
+            </p>
+
+            <a href="#books" class="button">
+                Explore the Books
+            </a>
+        </div>
+
+        <div class="portrait">
+            AUTHOR PORTRAIT
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container about-content">
+
+        <div class="eyebrow">Meet the Author</div>
+
+        <h2 class="section-title">
+            About Jason Balson
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p>
+            Jason Balson is the author behind a
+            collection of writings devoted to personal
+            growth, self-awareness, and meaningful change.
+        </p>
+
+        <p>
+            His work explores the thoughts, habits,
+            and beliefs that shape our everyday lives,
+            encouraging readers to question familiar
+            patterns and discover new possibilities.
+        </p>
+
+        <p>
+            Through an accessible and reflective
+            approach, his writing invites readers to
+            reconnect with what matters and become
+            active participants in their own lives.
+        </p>
+
+    </div>
+</section>
+
+<section id="books">
+    <div class="container">
+
+        <div class="eyebrow">The Collection</div>
+
+        <h2 class="section-title">Books</h2>
+
+        <div class="gold-line"></div>
+
+        <p class="books-intro">
+            Books exploring the challenges of everyday
+            life, the psychology of change, and the
+            pursuit of a more fulfilling existence.
+        </p>
+
+        <div class="book-grid">
+
+            <article class="book">
+                <div class="book-cover">BOOK COVER</div>
+                <h3>Don't Let Life Pass You By</h3>
+                <p>Personal growth and meaningful change.</p>
+                <p>English edition concept.</p>
+            </article>
+
+            <article class="book">
+                <div class="book-cover">BOOK COVER</div>
+                <h3>New Book Project</h3>
+                <p>Further details to be announced.</p>
+            </article>
+
+            <article class="book">
+                <div class="book-cover">BOOK COVER</div>
+                <h3>New Book Project</h3>
+                <p>Further details to be announced.</p>
+            </article>
+
+            <article class="book">
+                <div class="book-cover">BOOK COVER</div>
+                <h3>New Book Project</h3>
+                <p>Further details to be announced.</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="philosophy" id="philosophy">
+    <div class="container">
+
+        <div class="eyebrow">A Philosophy of Life</div>
+
+        <h2>
+            A meaningful life is not something
+            we find. It is something we create.
+        </h2>
+
+        <p>
+            Personal growth begins with awareness.
+            By understanding the way we think,
+            questioning our assumptions, and making
+            conscious choices, we can gradually
+            transform the way we experience life.
+        </p>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+
+        <div class="eyebrow">Get in Touch</div>
+
+        <h2 class="section-title">Contact</h2>
+
+        <p>
+            Contact information for publishing inquiries,
+            rights, translations, and professional
+            correspondence will be available here.
+        </p>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+
+    <div class="footer-name">JASON BALSON</div>
+
+    <p>Author · Personal Growth</p>
+
+    <p>
+        &copy; 2026 Jason Balson. All rights reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
